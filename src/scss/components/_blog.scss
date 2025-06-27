@@ -1,0 +1,131 @@
+section-blog .container{
+    padding-top: 6em;
+}
+.blog_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.blog_content{
+    display: flex;
+}
+.blog_info{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 400px;
+}
+#text{
+    width: 400px;
+    height: 65px;
+    border: 1px solid black;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.form2{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0;
+    padding-left: 3em;
+}
+.categories_t1{
+    margin: 0;
+    font-size: 30px;
+}
+.categories_t2{
+    display: flex;
+    font-size: 22px;
+    color: #9F9F9F;
+    margin: 0;
+}
+.categories_left{
+    margin-left: 0;
+}
+.categories_right{
+    margin-right: 0;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0;
+    padding-left: 3em;
+    padding-top: 40px;
+}
+.blog_buttons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 3em;
+}
+.shop_button{
+    margin: 0;
+}
+.btn5{
+    background-color: #B88E2F;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.btn6{
+    background-color: #F9F1E7;
+    padding: 10px 18px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+@media (max-width:480px) {
+    section-blog .container{
+        padding-top: 3em;
+    }   
+    .blog_content{
+        flex-direction: column-reverse;
+    }
+    .blog_info{
+        width: 300px;
+        gap: 20px;
+    }
+    .categories{
+        padding-left: 0;
+        gap: 15px;
+    }
+    #text{
+        width: 300px;
+    }
+    .posts{
+        padding-left: 0;
+        padding-top: 0;
+        gap: 15px;
+    }
+    .blog_cards{
+        gap: 20px;
+        padding-top: 3em;
+    }
+    .blog_buttons{
+        width: 300px;
+        gap: 20px;
+        padding-top: 1em;
+    }
+    .btn5{
+        font-size: 18px;
+    }
+    .btn6{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,43 @@
+section-cards .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    gap: 50px;
+}
+
+.cards {
+    width: 1550px;
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.btn2 {
+    width: 280px;
+    height: 70px;
+    background-color: white;
+    border: 2px solid #B88E2F;
+    color: #B88E2F;
+    font-size: 20px;
+}
+
+.cards_zag {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+@media (max-width:480px) {
+    .cards_zag {
+        font-size: 20px;
+    }
+
+    section-cards .container {
+        gap: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}

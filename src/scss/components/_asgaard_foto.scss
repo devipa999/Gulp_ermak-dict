@@ -1,0 +1,75 @@
+.asgaard_foto {
+    display: flex;
+    gap: 50px;
+    // padding-left: 3em;
+    // margin: 0;
+}
+
+.asgaard_foto_mini {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.asgaard_foto_main {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .asgaard_foto {
+        display: flex;
+        flex-direction: column;
+        /* Миниатюры сверху, основное фото снизу */
+        gap: 5px;
+        /* Уменьшаем отступ */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .asgaard_foto_mini {
+        display: flex;
+        flex-direction: row;
+        /* Миниатюры в строку */
+        gap: 10px;
+        /* Уменьшаем отступ между миниатюрами */
+        overflow-x: auto;
+        /* Горизонтальная прокрутка при необходимости */
+        padding-bottom: 8px;
+        /* Для скроллбара (если появится) */
+    }
+
+    .mini_foto {
+        min-width: 70px;
+        /* Фиксированная ширина миниатюр */
+        height: 70px;
+        border: 1px solid #f0f0f0;
+        /* Граница для четкости */
+        border-radius: 4px;
+        flex-shrink: 0;
+        /* Запрещаем сжатие */
+    }
+
+    .mini_foto img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Изображение заполняет контейнер без искажений */
+    }
+
+    .asgaard_foto_main {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        /* Квадратное фото (можно изменить на 4/3) */
+        border-radius: 8px;
+
+        overflow: hidden;
+    }
+
+    .asgaard_foto_main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
