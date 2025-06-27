@@ -1,0 +1,50 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 280px;
+    margin: 0;
+}
+.card_name{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left:10px ;
+
+}
+.card_summa{
+    margin: 0;
+    font-size: 20px;
+    padding-left:10px ;
+
+}
+
+.card_reit{
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding-left:10px ;
+    align-items: center;
+
+
+}
+.reit{
+    margin: 0;
+    font-size: 20px;
+
+}
+.zvezda{
+    margin: 0;
+    
+}
+.mini_svg{
+    margin: 0;
+    margin-top: -1px;
+}
+.review{
+    margin: 0;
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+    color: #9F9F9F;
+}

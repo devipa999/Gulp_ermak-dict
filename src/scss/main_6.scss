@@ -1,0 +1,24 @@
+// ==== 1. Utils ====
+@use 'utils/variables';
+
+// ==== 2. Base styles ====
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/layout';
+
+// ==== 3. Layout ====
+@use 'layout/container';
+
+// ==== 4. Components ====
+@use 'components/footer';
+@use 'components/header';
+@use 'components/header_outher';
+@use 'components/main_check';
+@use 'components/input_check';
+@use 'components/information';
+@use 'components/input';
+@use 'components/input_select';
+
+body {
+  background-color: var(--main-color);
+}

@@ -1,0 +1,33 @@
+// ==== 1. Utils ====
+@use 'utils/variables';
+
+// ==== 2. Base styles ====
+@use 'base/reset';
+@use 'base/typography';
+@use 'base/layout';
+
+// ==== 3. Layout ====
+@use 'layout/container';
+
+// ==== 4. Components ====
+@use 'components/button';
+@use 'components/card';
+@use 'components/header_home';
+@use 'components/main-rooms_home';
+@use 'components/main-cards_home';
+@use 'components/main-beautiful_home';
+@use 'components/main-funiro_home';
+@use 'components/header';
+@use 'components/footer';
+
+
+body {
+  background-color: var(--main-color);
+}
+
+@media (max-width: 480px) {
+  body{
+    width: 100%;
+  }
+  
+}

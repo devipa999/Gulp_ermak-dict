@@ -1,0 +1,12 @@
+section-tovar .container{
+    display: flex;
+    padding-top: 3em;
+    // justify-content: space-between;
+    // gap: 100px;
+}
+
+@media (max-width: 480px) {
+    section-tovar .container{
+        flex-direction: column;
+    }
+}

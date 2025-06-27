@@ -1,0 +1,81 @@
+section-rooms{
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.block_text{
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+.t1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.t2{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.384);
+}
+.block_rooms{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1600px;
+    padding-top: 3%;
+}
+.room{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.image_room{
+    width: 450px;
+}
+.room_t1{
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+@media (max-width: 480px) {
+    section-rooms {
+        padding-top: 2em;
+    }
+
+    .block_text {
+        gap: 10px;
+    }
+
+    .t1 {
+        font-size: 24px;
+    }
+
+    .t2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .block_rooms {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .room {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image_room {
+        width: 100%;
+        height: auto;
+    }
+
+    .room_t1 {
+        font-size: 24px;
+        padding-top: 5px;
+    }
+}
